@@ -1,0 +1,178 @@
+/* Splošni stil */
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Telefon */
+#phone {
+    width: 300px;
+    height: 600px;
+    background: #000;
+    border: 8px solid #333;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Zaklenjen zaslon */
+#lockScreen {
+    background: url('https://via.placeholder.com/300x600') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#lockScreen #date {
+    margin-bottom: 5px;
+}
+
+#lockScreen #time {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#lockScreen #message {
+    font-size: 24 px;
+    font-weight: lighter;
+}
+
+#pinDisplay {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.key:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.emptyKey {
+    width: 60px;
+    height: 60px;
+    visibility: hidden; /* Ostane prazno, da se ohrani razpored */
+}
+
+/* Domači zaslon */
+#homeScreen {
+    display: none;
+    background: #222;
+    color: white;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background: #4CAF50;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Dummy ikone */
+.icon.dummy {
+    background: #888;
+}
+
+/* Obvestilo */
+.notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+
+/* Sporočilo */
+#messageScreen {
+    display: none;
+    background: #fff;
+    color: black;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: start;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#messageScreen h2 {
+    margin-top: 0;
+}
+
+#backBtn {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#backBtn:hover {
+    background: #388E3C;
+}
+
+/* Animacije */
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
