@@ -1,11 +1,20 @@
-const correctPin = "123456";
+const correctPin =  "1" //"123456";
 let enteredPin = "";
+let incorrectPinCount = 0;
 
 const pinDisplay = document.getElementById('pinDisplay');
 const lockScreen = document.getElementById('lockScreen');
 const homeScreen = document.getElementById('homeScreen');
 const messageScreen = document.getElementById('messageScreen');
 const messageIcon = document.getElementById('messageIcon');
+
+const incorrectPinMessages = [
+    "Napačna koda. Poskusi znova.",
+    "Maš to! Zadnji dve cifri že poznaš!",
+    "Namig: začne se s 4",
+    "Namig: potem gre prst dol na luknjo 😉",
+    "Namig: 4 in 3 = današnji datum + 9"
+]
 
 function formatDate(date) {
     const days = ['nedelja', 'ponedeljek', 'torek', 'sreda', 'četrtek', 'petek', 'sobota'];
@@ -47,9 +56,16 @@ document.querySelectorAll('.key').forEach(key => {
                         homeScreen.style.display = 'block';
                     }, "200");
                 } else {
-                    alert('Napačna koda. Poskusi znova.');
+                    //alert('Napačna koda. Poskusi znova.');
+                    if (incorrectPinCount >= incorrectPinMessages.length) {
+                        document.getElementById("lockScreenMessage").textContent = "Napačna koda. Poskusi znova.";
+                    }
+                    else {
+                        document.getElementById("lockScreenMessage").textContent = incorrectPinMessages[incorrectPinCount];
+                    }
                     enteredPin = "";
-                    pinDisplay.textContent = "••••";
+                    pinDisplay.innerHTML = "&nbsp";
+                    incorrectPinCount += 1;
                 }
             }
         }

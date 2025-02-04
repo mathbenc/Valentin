@@ -28,6 +28,7 @@ body {
 /* Zaklenjen zaslon */
 #lockScreen {
     background: url('https://via.placeholder.com/300x600') no-repeat center;
+    background: lightpink;
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -51,7 +52,7 @@ body {
     font-weight: bold;
 }
 
-#lockScreen #message {
+#lockScreenMessage {
     font-size: 24 px;
     font-weight: lighter;
 }
@@ -97,6 +98,8 @@ body {
 #homeScreen {
     display: none;
     background: #222;
+    background: url("https://i.pinimg.com/564x/18/b1/ce/18b1ce086ba0c10278fe41a622a99a51.jpg") no-repeat center;
+    background: lightpink;
     color: white;
     height: 100%;
     padding: 20px;
@@ -126,6 +129,10 @@ body {
     background: #888;
 }
 
+.icon.empty {
+    visibility: hidden; 
+}
+
 /* Obvestilo */
 .notification {
     position: absolute;
@@ -134,8 +141,10 @@ body {
     background: red;
     color: white;
     font-size: 12px;
-    padding: 4px 6px;
+    padding: 6px 6px;
     border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
 
 /* Sporočilo */
@@ -177,4 +186,27 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Dock */
+#dock {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+}
+
+.dock-icon {
+    background: rgba(255, 255, 255, 0.9);
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 24px;
 }
