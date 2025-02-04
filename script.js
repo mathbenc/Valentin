@@ -45,7 +45,7 @@ document.querySelectorAll('.key').forEach(key => {
                     setTimeout(() => {
                         lockScreen.style.display = 'none';
                         homeScreen.style.display = 'block';
-                    }, "500");
+                    }, "200");
                 } else {
                     alert('Napačna koda. Poskusi znova.');
                     enteredPin = "";

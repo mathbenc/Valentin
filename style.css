@@ -4,9 +4,11 @@ body {
     padding: 0;
     background: #111;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
     align-items: center;
-    height: 100vh;
+    /*height: 100vh;*/
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
