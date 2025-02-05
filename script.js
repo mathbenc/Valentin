@@ -8,6 +8,7 @@ const homeScreen = document.getElementById('homeScreen');
 const messageScreen = document.getElementById('messageScreen');
 const messageIcon = document.getElementById('messageIcon');
 const backButton = document.getElementById("backBtn");
+const musicIcon = document.getElementById("musicIcon")
 
 const incorrectPinMessages = [
     "Napačna koda. Poskusi znova.",
@@ -81,4 +82,8 @@ messageIcon.addEventListener('click', () => {
 backButton.addEventListener('click', () => {
     homeScreen.style.display = 'block';
     messageScreen.style.display = 'none';
+});
+
+musicIcon.addEventListener('click', () => {
+    window.open("https://open.spotify.com/track/0bfvHnWWOeU1U5XeKyVLbW?si=0944e68017b745b8", '_blank');
 });
