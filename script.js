@@ -7,8 +7,10 @@ const lockScreen = document.getElementById('lockScreen');
 const homeScreen = document.getElementById('homeScreen');
 const messageScreen = document.getElementById('messageScreen');
 const messageIcon = document.getElementById('messageIcon');
-const backButton = document.getElementById("backBtn");
-const musicIcon = document.getElementById("musicIcon")
+const messageBackButton = document.getElementById("backBtn");
+const stravaBackButton = document.getElementById("stravaBackBtn");
+const musicIcon = document.getElementById("musicIcon");
+const stravaIcon = document.getElementById("stravaIcon");
 
 const incorrectPinMessages = [
     "Napačna koda. Poskusi znova.",
@@ -79,11 +81,21 @@ messageIcon.addEventListener('click', () => {
     messageScreen.style.display = 'block';
 });
 
-backButton.addEventListener('click', () => {
+messageBackButton.addEventListener('click', () => {
     homeScreen.style.display = 'block';
     messageScreen.style.display = 'none';
 });
 
 musicIcon.addEventListener('click', () => {
     window.open("https://open.spotify.com/track/0bfvHnWWOeU1U5XeKyVLbW?si=0944e68017b745b8", '_blank');
+});
+
+stravaIcon.addEventListener('click', () => {
+    homeScreen.style.display = 'none';
+    stravaScreen.style.display = 'block';
+});
+
+stravaBackButton.addEventListener('click', () => {
+    homeScreen.style.display = 'block';
+    stravaScreen.style.display = 'none';
 });
