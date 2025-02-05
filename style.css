@@ -124,11 +124,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Dummy ikone */
-.icon.dummy {
-    background: #888;
-}
-
 .icon.empty {
     visibility: hidden; 
 }
@@ -195,8 +190,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.3);
-    width: 90%;
-    padding: 10px;
+    width: 92%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
@@ -209,4 +205,5 @@ body {
     height: 60px;
     border-radius: 15px;
     font-size: 24px;
+    margin: 0;
 }
