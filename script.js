@@ -7,6 +7,7 @@ const lockScreen = document.getElementById('lockScreen');
 const homeScreen = document.getElementById('homeScreen');
 const messageScreen = document.getElementById('messageScreen');
 const messageIcon = document.getElementById('messageIcon');
+const backButton = document.getElementById("backBtn");
 
 const incorrectPinMessages = [
     "Napačna koda. Poskusi znova.",
@@ -77,3 +78,7 @@ messageIcon.addEventListener('click', () => {
     messageScreen.style.display = 'block';
 });
 
+backButton.addEventListener('click', () => {
+    homeScreen.style.display = 'block';
+    messageScreen.style.display = 'none';
+});
