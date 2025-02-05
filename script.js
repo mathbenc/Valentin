@@ -11,6 +11,7 @@ const messageBackButton = document.getElementById("backBtn");
 const stravaBackButton = document.getElementById("stravaBackBtn");
 const musicIcon = document.getElementById("musicIcon");
 const stravaIcon = document.getElementById("stravaIcon");
+const messageNotification = document.getElementById("messageNotification");
 
 const incorrectPinMessages = [
     "Napačna koda. Poskusi znova.",
@@ -59,6 +60,9 @@ document.querySelectorAll('.key').forEach(key => {
                         lockScreen.style.display = 'none';
                         homeScreen.style.display = 'block';
                     }, "200");
+                    setTimeout(() => {
+                        messageNotification.style.display = 'block';
+                    }, "1500");
                 } else {
                     //alert('Napačna koda. Poskusi znova.');
                     if (incorrectPinCount >= incorrectPinMessages.length) {

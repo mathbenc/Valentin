@@ -130,6 +130,7 @@ body {
 
 /* Obvestilo */
 .notification {
+    display: none;
     position: absolute;
     top: -5px;
     right: -5px;
@@ -140,6 +141,7 @@ body {
     border-radius: 50%;
     width: 15px;
     height: 15px;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 /* Strava */
