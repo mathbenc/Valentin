@@ -111,13 +111,17 @@ body {
 .icon {
     width: 60px;
     height: 60px;
-    background: #4CAF50;
+    background: #fff;
     border-radius: 15px;
     margin: 10px;
     position: relative;
     display: inline-block;
     cursor: pointer;
     transition: transform 0.3s;
+}
+
+.icon img {
+    border-radius: 15px;
 }
 
 .icon:hover {
