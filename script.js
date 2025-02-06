@@ -1,4 +1,4 @@
-const correctPin =  "1" //"123456";
+const correctPin =  "403297";
 let enteredPin = "";
 let incorrectPinCount = 0;
 
@@ -7,7 +7,7 @@ const lockScreen = document.getElementById('lockScreen');
 const homeScreen = document.getElementById('homeScreen');
 const messageScreen = document.getElementById('messageScreen');
 const messageIcon = document.getElementById('messageIcon');
-const messageBackButton = document.getElementById("backBtn");
+const messageBackButton = document.getElementById("messageBackBtn");
 const stravaBackButton = document.getElementById("stravaBackBtn");
 const bookBackButton = document.getElementById("bookBackBtn");
 const noteBackButton = document.getElementById("noteBackBtn");
@@ -21,8 +21,8 @@ const incorrectPinMessages = [
     "Napačna koda. Poskusi znova.",
     "Maš to! Zadnji dve cifri že poznaš!",
     "Namig: začne se s 4",
-    "Namig: potem gre prst dol na luknjo 😉",
-    "Namig: 4 in 3 = današnji datum + 9"
+    "Namig: potem gre prst dol 😉",
+    "Namig: 4 in 3 = današnji datum + 3*3"
 ]
 
 function formatDate(date) {

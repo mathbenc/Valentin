@@ -162,22 +162,6 @@ body {
     width: 100%;
 }
 
-/* Sporočilo */
-#messageScreen {
-    display: none;
-    background: #fff;
-    color: black;
-    padding: 20px;
-    height: 100%;
-    box-sizing: border-box;
-    text-align: start;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-#messageScreen h2 {
-    margin-top: 0;
-}
-
 /* Animacije */
 @keyframes slideUp {
     from { transform: translateY(100%); }
