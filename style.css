@@ -148,8 +148,8 @@ body {
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Strava */
-#stravaScreen {
+/* App prikaz */
+.imgScreen {
     display: none;
     background: #fff;
     height: 100%;
@@ -157,21 +157,7 @@ body {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-#stravaScreen img {
-    height: 100%;
-    width: 100%;
-}
-
-/* Book */
-#bookScreen {
-    display: none;
-    background: #fff;
-    height: 100%;
-    box-sizing: border-box;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-#bookScreen img {
+.imgScreen img {
     height: 100%;
     width: 100%;
 }
@@ -246,5 +232,6 @@ body {
     color: #fc4c02;
 }
 
-#bookBackBtn {
+#noteBackBtn {
+    color: #e4af0a;
 }

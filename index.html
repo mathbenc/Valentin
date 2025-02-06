@@ -12,7 +12,7 @@
 Easter-eggs:
 + lockscreen
 - sporocilo
-- knjiga -> en quote
++ knjiga -> en quote
 + strava -> prvi date
 + glasba
 - notes -> valentin app to do
@@ -67,7 +67,7 @@ Easter-eggs:
         <div class="icon">
             <img src="icons/health.svg"/>
         </div>
-        <div class="icon">
+        <div class="icon" id="noteIcon">
             <img src="icons/notes.svg"/>
         </div>
         <div class="icon" id="stravaIcon">
@@ -113,15 +113,21 @@ Easter-eggs:
     </div>
 
     <!-- Zaslon za prikaz slike -->
-    <div id="stravaScreen">
+    <div id="stravaScreen" class="imgScreen">
         <button id="stravaBackBtn" class="backBtn">&larr; Nazaj</button>
         <img src="images/strava.jpeg">
     </div>
 
     <!-- Zaslon za prikaz knjige -->
-    <div id="bookScreen">
+    <div id="bookScreen" class="imgScreen">
         <button id="bookBackBtn" class="backBtn">&larr; Nazaj</button>
         <img src="images/book.png">
+    </div>
+
+    <!-- Zaslon za prikaz belezke -->
+    <div id="noteScreen" class="imgScreen">
+        <button id="noteBackBtn" class="backBtn">&larr; Nazaj</button>
+        <img src="images/note.png">
     </div>
 </div>
 

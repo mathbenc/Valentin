@@ -10,9 +10,11 @@ const messageIcon = document.getElementById('messageIcon');
 const messageBackButton = document.getElementById("backBtn");
 const stravaBackButton = document.getElementById("stravaBackBtn");
 const bookBackButton = document.getElementById("bookBackBtn");
+const noteBackButton = document.getElementById("noteBackBtn");
 const musicIcon = document.getElementById("musicIcon");
 const stravaIcon = document.getElementById("stravaIcon");
 const bookIcon = document.getElementById("bookIcon");
+const noteIcon = document.getElementById("noteIcon");
 const messageNotification = document.getElementById("messageNotification");
 
 const incorrectPinMessages = [
@@ -114,4 +116,14 @@ bookIcon.addEventListener('click', () => {
 bookBackButton.addEventListener('click', () => {
     homeScreen.style.display = 'block';
     bookScreen.style.display = 'none';
+});
+
+noteIcon.addEventListener('click', () => {
+    homeScreen.style.display = 'none';
+    noteScreen.style.display = 'block';
+});
+
+noteBackButton.addEventListener('click', () => {
+    homeScreen.style.display = 'block';
+    noteScreen.style.display = 'none';
 });
