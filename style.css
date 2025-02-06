@@ -122,6 +122,8 @@ body {
 
 .icon img {
     border-radius: 15px;
+    width: 60px;
+    height: 60px;
 }
 
 .icon:hover {
@@ -218,4 +220,8 @@ body {
 
 #noteBackBtn {
     color: #e4af0a;
+}
+
+#igBackBtn {
+    color: #833ab4;
 }
