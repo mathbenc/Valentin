@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDT1B5YYF9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZDT1B5YYF9');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presenečenje</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!--
+    <!--
 Easter-eggs:
 + lockscreen
 + sporocilo
@@ -19,121 +31,122 @@ Easter-eggs:
 + ig
 -->
 
-<div id="phone">
-    <!-- Zaklenjen zaslon -->
-    <div id="lockScreen">
-        <p id="date"></p>
-        <p id="time"></p>
-        <p id="lockScreenMessage">Vnesite kodo za dostop</p>
-        <div id="pinDisplay">&nbsp</div>
-        <div class="keypad">
-            <button class="key">1</button>
-            <button class="key">2</button>
-            <button class="key">3</button>
-            <button class="key">4</button>
-            <button class="key">5</button>
-            <button class="key">6</button>
-            <button class="key">7</button>
-            <button class="key">8</button>
-            <button class="key">9</button>
-            <button class="emptyKey"></button>
-            <button class="key">0</button>
-            <button class="emptyKey"></button>
-        </div>
-    </div>
-
-    <!-- Domači zaslon -->
-    <div id="homeScreen">
-        <div class="icon">
-            <img src="icons/mail.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/app-store.svg"/>
-        </div>
-        <div class="icon" id="musicIcon">
-            <img src="icons/spotify.svg"/>
-        </div>
-        <div class="icon" id="bookIcon">
-            <img src="icons/books.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/calendar.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/weather.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/clock.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/health.svg"/>
-        </div>
-        <div class="icon" id="noteIcon">
-            <img src="icons/notes.svg"/>
-        </div>
-        <div class="icon" id="stravaIcon">
-            <img src="icons/strava.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/photos.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/settings.svg"/>
-        </div>
-        <div class="icon">
-            <img src="icons/apple-reminders.svg"/>
-        </div>
-        <div class="icon" id="igIcon">
-            <img src="icons/instagram.svg"/>
-        </div>
-        <div class="icon empty"></div>
-
-        <!-- Dock (kot na iPhone) -->
-        <div id="dock">
-            <div class="icon dock-icon">
-                <img src="icons/contacts.svg"/>
-            </div>
-            <div class="icon dock-icon" id="messageIcon">
-                <img src="icons/ios-message.svg"/>
-                <div id="messageNotification" class="notification">2</div>
-            </div>
-            <div class="icon dock-icon">
-                <img src="icons/apple-safari.svg"/>
+    <div id="phone">
+        <!-- Zaklenjen zaslon -->
+        <div id="lockScreen">
+            <p id="date"></p>
+            <p id="time"></p>
+            <p id="lockScreenMessage">Vnesite kodo za dostop</p>
+            <div id="pinDisplay">&nbsp</div>
+            <div class="keypad">
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="emptyKey"></button>
+                <button class="key">0</button>
+                <button class="emptyKey"></button>
             </div>
         </div>
+
+        <!-- Domači zaslon -->
+        <div id="homeScreen">
+            <div class="icon">
+                <img src="icons/mail.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/app-store.svg" />
+            </div>
+            <div class="icon" id="musicIcon">
+                <img src="icons/spotify.svg" />
+            </div>
+            <div class="icon" id="bookIcon">
+                <img src="icons/books.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/calendar.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/weather.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/clock.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/health.svg" />
+            </div>
+            <div class="icon" id="noteIcon">
+                <img src="icons/notes.svg" />
+            </div>
+            <div class="icon" id="stravaIcon">
+                <img src="icons/strava.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/photos.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/settings.svg" />
+            </div>
+            <div class="icon">
+                <img src="icons/apple-reminders.svg" />
+            </div>
+            <div class="icon" id="igIcon">
+                <img src="icons/instagram.svg" />
+            </div>
+            <div class="icon empty"></div>
+
+            <!-- Dock (kot na iPhone) -->
+            <div id="dock">
+                <div class="icon dock-icon">
+                    <img src="icons/contacts.svg" />
+                </div>
+                <div class="icon dock-icon" id="messageIcon">
+                    <img src="icons/ios-message.svg" />
+                    <div id="messageNotification" class="notification">2</div>
+                </div>
+                <div class="icon dock-icon">
+                    <img src="icons/apple-safari.svg" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Zaslon za prikaz sporocila -->
+        <div id="messageScreen" class="imgScreen">
+            <button id="messageBackBtn" class="backBtn">&larr; Nazaj</button>
+            <img src="images/message-2.png">
+        </div>
+
+        <!-- Zaslon za prikaz slike -->
+        <div id="stravaScreen" class="imgScreen">
+            <button id="stravaBackBtn" class="backBtn">&larr; Nazaj</button>
+            <img src="images/strava.jpeg">
+        </div>
+
+        <!-- Zaslon za prikaz knjige -->
+        <div id="bookScreen" class="imgScreen">
+            <button id="bookBackBtn" class="backBtn">&larr; Nazaj</button>
+            <img src="images/book.png">
+        </div>
+
+        <!-- Zaslon za prikaz belezke -->
+        <div id="noteScreen" class="imgScreen">
+            <button id="noteBackBtn" class="backBtn">&larr; Nazaj</button>
+            <img src="images/note.png">
+        </div>
+
+        <!-- Zaslon za prikaz IG -->
+        <div id="igScreen" class="imgScreen">
+            <button id="igBackBtn" class="backBtn">&larr; Nazaj</button>
+            <img src="images/ig.png">
+        </div>
     </div>
 
-    <!-- Zaslon za prikaz sporocila -->
-    <div id="messageScreen" class="imgScreen">
-        <button id="messageBackBtn" class="backBtn">&larr; Nazaj</button>
-        <img src="images/message-2.png">
-    </div>
-
-    <!-- Zaslon za prikaz slike -->
-    <div id="stravaScreen" class="imgScreen">
-        <button id="stravaBackBtn" class="backBtn">&larr; Nazaj</button>
-        <img src="images/strava.jpeg">
-    </div>
-
-    <!-- Zaslon za prikaz knjige -->
-    <div id="bookScreen" class="imgScreen">
-        <button id="bookBackBtn" class="backBtn">&larr; Nazaj</button>
-        <img src="images/book.png">
-    </div>
-
-    <!-- Zaslon za prikaz belezke -->
-    <div id="noteScreen" class="imgScreen">
-        <button id="noteBackBtn" class="backBtn">&larr; Nazaj</button>
-        <img src="images/note.png">
-    </div>
-
-    <!-- Zaslon za prikaz IG -->
-    <div id="igScreen" class="imgScreen">
-        <button id="igBackBtn" class="backBtn">&larr; Nazaj</button>
-        <img src="images/ig.png">
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
