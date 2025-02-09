@@ -98,7 +98,7 @@ messageBackButton.addEventListener('click', () => {
 
 musicIcon.addEventListener('click', () => {
     //window.open("https://open.spotify.com/track/0bfvHnWWOeU1U5XeKyVLbW?si=0944e68017b745b8", '_blank');
-    window.open("    https://open.spotify.com/track/0lDBAnVJcTq44Jr2HgAlHY?si=f1b9212477cc4f77", '_blank');
+    window.open("https://open.spotify.com/track/0lDBAnVJcTq44Jr2HgAlHY?si=f1b9212477cc4f77", '_blank');
 });
 
 stravaIcon.addEventListener('click', () => {
