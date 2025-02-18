@@ -18,6 +18,7 @@ const bookIcon = document.getElementById("bookIcon");
 const noteIcon = document.getElementById("noteIcon");
 const igIcon = document.getElementById("igIcon");
 const messageNotification = document.getElementById("messageNotification");
+//const spotifyNotification = document.getElementById("spotifyNotification");
 
 const incorrectPinMessages = [
     "Napačna koda. Poskusi znova.",
@@ -68,6 +69,7 @@ document.querySelectorAll('.key').forEach(key => {
                     }, "200");
                     setTimeout(() => {
                         messageNotification.style.display = 'block';
+                        //spotifyNotification.style.display = 'block';
                     }, "1500");
                 } else {
                     //alert('Napačna koda. Poskusi znova.');
@@ -98,7 +100,8 @@ messageBackButton.addEventListener('click', () => {
 
 musicIcon.addEventListener('click', () => {
     //window.open("https://open.spotify.com/track/0bfvHnWWOeU1U5XeKyVLbW?si=0944e68017b745b8", '_blank');
-    window.open("https://open.spotify.com/track/0lDBAnVJcTq44Jr2HgAlHY?si=f1b9212477cc4f77", '_blank');
+    //window.open("https://open.spotify.com/track/0lDBAnVJcTq44Jr2HgAlHY?si=f1b9212477cc4f77", '_blank');
+    window.open("https://open.spotify.com/track/2403gCM2RluhMgBc9TSwp7?si=8e13ba2ee2614c3e", '_blank');
 });
 
 stravaIcon.addEventListener('click', () => {
